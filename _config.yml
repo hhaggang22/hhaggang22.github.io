@@ -1,11 +1,13 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
-copyright: © 2019 GitHub User
+title: Git-똥찬 개발자의 끄적 d-log
+author: hhaggang22
+email: zhdlqkddnf@naver.com
+copyright: © 2021 by hkkim
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is ha kyeong Kim's develope log. 
+  Trying to write all the issues I got and the things I knew.
+  It can contain some mistake or error, so if you find it, make an issue to notice me. 
+  Hope it will help you in any way. 
+  Thanks-:)
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -17,24 +19,15 @@ lin:
 
   # generate social links
   social_links:
-    twitter: jekyllrb
-    github:  jekyll
-    medium:  jekyll
-    rss: rss
-    dribbble: jekyll
-    facebook: jekyll
-    flickr:   jekyll
-    instagram: jekyll
-    linkedin: jekyll
-    pinterest: jekyll
-    youtube_user: jekyll
-    youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    telegram: jekyll
-    googleplus: +jekyll
-    keybase: jekyll
+    github: hhaggang22
+    facebook: 김하경
+    instagram: ha__gging
+    linkedin: 김하경
+    youtube_user: git똥찬 개발자
+    youtube_channel: git똥찬 개발자
 
 theme: lin
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-seo-tag
