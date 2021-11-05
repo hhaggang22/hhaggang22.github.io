@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Joanne Kim :)
+title: About
 permalink: /about/
 ---
 
