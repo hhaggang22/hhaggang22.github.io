@@ -5,8 +5,10 @@ copyright: © 2021 by hkkim
 description: > # this means to ignore newlines until "show_excerpts:"
   This is Joanne's blog for writing about develop logs. 
   Trying to write all the issues I got and the things I knew.
+
   It might contain some mistake or error, so if you find it, make an issue or notice me. 
   Hope it will help you in any way. 
+
   Thanks-:)
 
 show_excerpts: false # set to true to show excerpts on the homepage
