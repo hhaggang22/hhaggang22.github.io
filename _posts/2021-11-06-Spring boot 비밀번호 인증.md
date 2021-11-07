@@ -11,3 +11,17 @@ layout: post
 > 이메일 확인 -> 비밀번호 인증 메일 전송 -> 이메일에서 인증 링크 클릭 후 사이트로 재접속 -> 비밀번호 변경
 
 이 순서로 진행하려고 한다.
+
+---
+
+### SMTP란 무엇인가?
+
+SMTP는 Simple Mail Transfer Protocol의 약자로 인터넷 메일을 송수신하는데에 사용하는 TCP/IP 프로토콜이다.
+TCP port는 25번 또는 587번으로 Spring boot의 yml에서 port 설정을 할 때 25번이나 587을 사용하면 된다.
+
+---
+
+> 개발환경
+> Spring boot, Intelli J, Mac OS, Gradle, 다음 SMTP 계정, Swagger(테스트)
+
+---
