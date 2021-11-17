@@ -29,32 +29,50 @@ TCP port는 25번 또는 587번으로 Spring boot의 yml에서 port 설정을 �
 
 ### 개발과정
 
-1. build.gradle dependencies 설정
+1.  build.gradle dependencies 설정
 
-   ```markdown
-   implementation group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: '1.2.0.RELEASE'
-   ```
+    ```markdown
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: '1.2.0.RELEASE'
+    ```
 
-2. application.yml에 메일 설정 작성
+2.  application.yml에 메일 설정 작성
 
-   ```yaml
-   //다음 smpt
-   //smtp.daum.net (SSL 사용, 포트 465)
+    ```yaml
+    //다음 smpt
+    //smtp.daum.net (SSL 사용, 포트 465)
 
-   spring:
-     mail:
-       host: smtp.daum.net
-       port: 465
-       username: SMTP용 daum 계정
-       password: SMTP용 daum 계정 비밀번호
-       properties:
-         mail:
-           smtp:
-             starttls:
-               enable: true
-               required: true
-             auth: true
-             connectiontimeout: 5000
-             timeout: 5000
-             writetimeout: 5000
-   ```
+    spring:
+      mail:
+        host: smtp.daum.net
+        port: 465
+        username: SMTP용 daum 계정
+        password: SMTP용 daum 계정 비밀번호
+        properties:
+          mail:
+            smtp:
+              starttls:
+                enable: true
+                required: true
+              auth: true
+              connectiontimeout: 5000
+              timeout: 5000
+              writetimeout: 5000
+    ```
+
+3.  이메일 Service 생성
+
+    ```java
+        @Service
+        @RequiredArgsConstructor
+        public class EmailSenderService {
+
+            private final JavaMailSender javaMailSender;
+
+            @Async
+            public void sendEmail(SimpleMailMessage email) {
+                javaMailSender.send(email);
+            }
+
+        }
+
+    ```
